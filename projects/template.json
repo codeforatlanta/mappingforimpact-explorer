@@ -1,0 +1,27 @@
+{
+    "title": "Test Project",
+    "description": "Test Description",
+    "query": "[out:json]; (  relation[route=bicycle](33.49101671911273,-84.70115661621094,33.96898962654881,-84.06532287597656);  way[highway=cycleway](33.49101671911273,-84.70115661621094,33.96898962654881,-84.06532287597656);  way[highway=path][bicycle=designated](33.49101671911273,-84.70115661621094,33.96898962654881,-84.06532287597656); );  out body; >; out skel qt;",
+    "startDate": "2022-10-20",
+    "filters": [
+        {
+            "type": "checkbox",
+            "key": "highway",
+            "options": [ "cycleway", "path" ],
+            "label": "Highway",
+            "icon": "",
+            "color": ""
+        },
+        {
+            "type": "checkbox",
+            "key": "route",
+            "options": [ "bicycle" ],
+            "label": "Route",
+            "icon": "",
+            "color": ""
+        }
+    ],
+    "map": {
+        "style": "light-v9"
+    }
+}
